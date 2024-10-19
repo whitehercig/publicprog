@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .student {
+            background-color: #28a745;
+        }
+
+        .student:hover {
+            background-color: #218838;
+        }
+
+        .teacher {
+            background-color: #17a2b8;
+        }
+
+        .teacher:hover {
+            background-color: #138496;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Что хотите сделать?</div>
+        <div class="buttons">
+            <a href="lesson.html"><button class="button student" onclick="handleClick('student')">Уроки</button></a>
+            <a href="tap.html"><button class="button teacher" onclick="handleClick('teacher')" >Тапать</button></a>
+        </div>
+    </div>
+</body>
+</html>
